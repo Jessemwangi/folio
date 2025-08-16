@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
           GitHub
         </a>
         <a 
-          href="https://linkedin.com/in/your-profile" 
+          href="https://www.linkedin.com/in/jesse-mwangi" 
           target="_blank" 
           rel="noopener noreferrer"
           className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded transition duration-300"

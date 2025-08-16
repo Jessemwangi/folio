@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
             </svg>
           </a>
           <a 
-            href="https://linkedin.com/in/your-profile" // <-- Update with your LinkedIn profile URL
+            href="https://www.linkedin.com/in/jesse-mwangi" // <-- Update with your LinkedIn profile URL
             target="_blank" 
             rel="noopener noreferrer"
             aria-label="LinkedIn Profile"
