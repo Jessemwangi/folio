@@ -1,3 +1,4 @@
+import Contact from "./Components/Contact"
 import Footer from "./Components/Footer"
 import Header from "./Components/Header"
 import Hero from "./Components/Hero"
@@ -12,7 +13,8 @@ function App() {
       <Header />
       <main className="container mx-auto max-w-5xl px-4 py-8">
         <Hero />
-        <ProjectsList />
+          <ProjectsList />
+          <Contact />
       </main>
       <Footer />
     </div>

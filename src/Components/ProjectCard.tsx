@@ -1,19 +1,19 @@
 import type { IProject } from "../Interface/IProject";
 
 
-// Define the props type for type safety
+
 interface ProjectCardProps {
   project: IProject;
 }
 
-const ProjectCard = ({ project }: ProjectCardProps) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ project }: ProjectCardProps) => {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
         {/* Laptop frame */}
         <div className="relative mx-auto w-full max-w-[90%] mt-8 bg-gray-900 rounded-t-lg p-2">
             {/* Screen */}
             <div className="relative bg-white rounded-sm overflow-hidden h-40">
-                {/* Scrollable content */}
+                {/* Scrollable img */}
                 <div className="overflow-y-scroll h-full">
                     <img 
                         src={project.image} 
@@ -22,7 +22,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                     />
                 </div>
             </div>
-            {/* Laptop bottom */}
+            {/* keyboard */}
             <div className="relative h-3 bg-gray-800 rounded-b-lg">
                 <div className="absolute left-1/2 top-0 w-16 h-1 -translate-x-1/2 bg-gray-700 rounded-b"></div>
             </div>
@@ -31,7 +31,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <div className="p-6">
             <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
             
-            {/* Technology Stack Tags */}
+            {/*  Stack */}
             <div className="flex flex-wrap gap-2 mb-4">
                 {project.stack.map((tech) => (
                     <span key={tech} className="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">
