@@ -42,7 +42,7 @@ const Hero = () => {
           <div className="relative w-64 h-64 sm:w-80 sm:h-80">
             <img 
               // 👇 Replace this with the actual path to your image in the `public` folder
-              src="/jesse-photo.jpg" 
+              src="/assets/jessemwangi.png" 
               alt="A professional headshot of Jesse Mwangi" 
               className="w-full h-full rounded-full object-cover border-4 border-gray-200 dark:border-gray-700 shadow-lg"
             />
