@@ -69,13 +69,11 @@ yarn dev
 
 The application will now be running on `http://localhost:5173` (or the next available port).
 
----
-
 ## 📂 Project Structure
 
 The project follows a standard Vite + React structure, with components and data organized for clarity and scalability.
 
-```
+```bash
 /
 ├── public/
 │   ├── assets/
