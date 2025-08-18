@@ -4,7 +4,7 @@
 
 Welcome to the source code for my personal portfolio. This project was built to showcase my skills, feature my best work, and serve as a central point of contact for recruiters and potential collaborators. It's a clean, modern, and fully responsive single-page application built with a powerful and efficient tech stack.
 
-**Live Demo:** [**jesse-mwangi-portfolio.com**](https://your-live-url.com)
+**Live Demo:** [**jesse-mwangi-portfolio.com**](https://folio-jesse.vercel.app/)
 
 ---
 
@@ -43,8 +43,8 @@ To run this project locally, you'll need to have Node.js and npm (or yarn) insta
 First, clone the repository to your local machine using Git:
 
 ```bash
-git clone [https://github.com/Jessemwangi/your-portfolio-repo.git](https://github.com/Jessemwangi/your-portfolio-repo.git)
-cd your-portfolio-repo
+git clone [https://github.com/Jessemwangi/folio.git](https://github.com/Jessemwangi/folio.git)
+cd folio
 ```
 
 ### 2. Install Dependencies
@@ -115,7 +115,7 @@ This portfolio is deployed on **Vercel** (or Netlify, etc.). The deployment proc
 
 I'm always open to discussing new projects, creative ideas, or opportunities to be part of an ambitious vision.
 
-* **LinkedIn:** [@your-linkedin-profile](https://linkedin.com/in/your-profile)
+* **LinkedIn:** [@jesse-mwangi](https://www.linkedin.com/in/jesse-mwangi/)
 * **Email:** [jessejzee@gmail.com](mailto:jessejzee@gmail.com)
 
 Thanks for checking out my portfolio!
