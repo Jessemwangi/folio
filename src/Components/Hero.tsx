@@ -1,56 +1,123 @@
 // src/components/Hero.tsx
-
 const Hero = () => {
   return (
-    <section id="home" className="py-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+    <section id="home" className="py-20 relative overflow-hidden">
+      {/* Background gradient for visual depth */}
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-50/50 to-purple-50/50 dark:from-blue-950/20 dark:to-purple-950/20 -z-10"></div>
+      
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         
-        {/* Left Column: Text Content */}
-        <div className="text-center md:text-left">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Jesse Mwangi
-          </h1>
-          <p className="text-xl md:text-2xl text-blue-500 dark:text-blue-400 font-semibold mb-6">
-            Senior Full-Stack Developer
-          </p>
-          <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
-            I build robust, scalable, and efficient web applications from front to back.
-            With a passion for clean code and user-centric design, I turn complex problems into elegant solutions.
-          </p>
-          <div className="flex justify-center md:justify-start space-x-4">
+        {/* Left Column: Enhanced Text Content */}
+        <div className="text-center lg:text-left space-y-6">
+          <div className="space-y-2">
+            <h1 className="text-5xl lg:text-7xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 pb-5 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
+              Jesse Mwangi
+            </h1>
+            <p className="text-2xl lg:text-3xl text-blue-600 dark:text-blue-400 font-semibold">
+              Senior Full-Stack Developer
+            </p>
+            <div className="flex flex-wrap justify-center lg:justify-start gap-2 text-sm font-medium">
+              <span className="px-3 py-1 bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300 rounded-full">
+                10+ Years Experience
+              </span>
+              <span className="px-3 py-1 bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300 rounded-full">
+                Team Leadership
+              </span>
+              <span className="px-3 py-1 bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300 rounded-full">
+                Enterprise Solutions
+              </span>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
+              <span className="font-semibold text-gray-900 dark:text-white">Architecting enterprise-grade solutions</span> with 
+              Node.js, TypeScript, React, and .NET Core. I lead development teams, optimize database performance, 
+              and integrate complex systems including payment gateways , health and government platforms.
+            </p>
+            
+            <div className="grid grid-cols-2 gap-4 text-center lg:text-left">
+              <div className="space-y-1">
+                <p className="text-2xl font-bold text-blue-600 dark:text-blue-400">50+</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Projects Delivered</p>
+              </div>
+              <div className="space-y-1">
+                <p className="text-2xl font-bold text-purple-600 dark:text-purple-400">5+</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Team Members Led</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
             <a 
-              href="https://github.com/Jessemwangi" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded transition duration-300"
+              href="#projects" 
+              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-center"
             >
-              GitHub
+              View My Work
             </a>
-            <a 
-              href="https://www.linkedin.com/in/jesse-mwangi" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded transition duration-300"
-            >
-              LinkedIn
-            </a>
+            <div className="flex justify-center lg:justify-start gap-3">
+              <a 
+                href="https://github.com/Jessemwangi" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 group"
+              >
+                <svg className="w-5 h-5 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                  <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                GitHub
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/jessemwangi" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 group"
+              >
+                <svg className="w-5 h-5 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+          {/* Tech stack preview */}
+          <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
+            <p className="text-sm text-gray-600 dark:text-gray-400 mb-3 font-medium">Core Technologies:</p>
+            <div className="flex flex-wrap justify-center lg:justify-start gap-2">
+              {['Node.js', 'TypeScript', 'React', '.NET Core', 'SQL Server', 'MongoDB', 'Azure'].map((tech) => (
+                <span key={tech} className="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-xs font-medium rounded border">
+                  {tech}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
 
-        {/* Right Column: Image */}
-        <div className="flex justify-center md:justify-end">
-          <div className="relative w-64 h-64 sm:w-80 sm:h-80">
-            <img 
-              // 👇 Replace this with the actual path to your image in the `public` folder
-              src="/assets/jessemwangi.png" 
-              alt="A professional headshot of Jesse Mwangi" 
-              className="w-full h-full rounded-full object-cover border-4 border-gray-200 dark:border-gray-700 shadow-lg"
-            />
-            {/* Optional: Add a decorative ring/glow effect */}
-            <div className="absolute inset-0 rounded-full border-4 border-blue-500/50 dark:border-blue-400/50 animate-pulse"></div>
+        {/* Right Column: Enhanced Image - Taller to match content */}
+        <div className="flex justify-center lg:justify-end">
+          <div className="relative">
+            <div className="relative w-72 h-96 lg:w-96 lg:h-[32rem]">
+              <img 
+                src="/assets/jessemwangi.png" 
+                alt="Jesse Mwangi - Senior Full-Stack Developer" 
+                className="w-full h-full rounded-2xl object-cover shadow-2xl"
+              />
+              
+              {/* Floating elements for visual interest */}
+              <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full opacity-20 animate-pulse"></div>
+              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-r from-green-500 to-blue-500 rounded-full opacity-20 animate-pulse delay-1000"></div>
+              
+              {/* Achievement badges */}
+              <div className="absolute -top-2 left-4 bg-white dark:bg-gray-800 px-3 py-1 rounded-full shadow-lg border">
+                <span className="text-xs font-semibold text-blue-600 dark:text-blue-400">💼 Team Lead</span>
+              </div>
+              <div className="absolute -bottom-2 right-4 bg-white dark:bg-gray-800 px-3 py-1 rounded-full shadow-lg border">
+                <span className="text-xs font-semibold text-green-600 dark:text-green-400">🚀 10+ Years</span>
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
     </section>
   );

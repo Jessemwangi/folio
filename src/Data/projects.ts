@@ -10,7 +10,7 @@ export const projects: IProject[] = [
   image: "/assets/hillrock_wide.png",
   liveSiteUrl: "https://hillrock-new.vercel.app/",
   adminUrl: "https://hillrock-new.vercel.app/Admin",
-  sourceCodeUrl: "${gitUrl}/hillrock_new"
+  sourceCodeUrl: `${gitUrl}/hillrock_new`
 },
   {
     id: 2,
@@ -22,14 +22,22 @@ export const projects: IProject[] = [
     sourceCodeUrl: "#", 
   },
   {
-    id: 3,
-    name: "SOS - Emergency Messaging App",
-    description: "A mobile-first web app that sends a distress signal via SMS and email to predefined contacts. Built with TypeScript and a Firebase Firestore backend for real-time, reliable data handling.",
-    stack: ["TypeScript", "React", "Firebase", "PWA", "Mobile-First"],
-    image: "/assets/sos_wide.gif",
-    liveSiteUrl: "https://sos-service.netlify.app/",
-    sourceCodeUrl: `${gitUrl}/sos`,
-  },
+  id: 3,
+  name: "Ujuzi STEMEX - Design Thinking in STEM Education",
+  description: "A multi-platform web application revolutionizing STEM education by integrating design thinking and hands-on learning kits. The system includes a guardian/agent platform for managing subscriptions and students, a learner platform for accessing interactive STEM courses and device documentation, an admin dashboard for managing content, and a Strapi-powered headless CMS backend.",
+  stack: ["React", "Redux", "TypeScript", "Vite", "Tailwind CSS", "Material UI", "SCSS", "Strapi", "PostgreSQL"],
+  image: "/assets/ujuzi_wide.png",
+  liveSiteUrl: "https://ujuzi.io",
+  learnerUrl: "https://learn.ujuzi.io/",
+  adminUrl: "https://admin.ujuzi.io/",
+  backendUrl: "https://api.ujuzi.io/",
+  sourceCode: {
+    guardian: `${gitUrl}/UjuziSchool`,
+    learner: `${gitUrl}/ujuziLearn`,
+    admin: `${gitUrl}/ujuziAdmin`,
+    backend: `${gitUrl}/ujuziapi`,
+  }
+},
   {
     id: 4,
     name: "BeInformed - News Platform",

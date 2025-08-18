@@ -30,7 +30,7 @@ This project is built using the latest web technologies to ensure a robust and m
 | **TypeScript** | A superset of JavaScript that adds static typing, improving code quality and developer experience. |
 | **Tailwind CSS**| A utility-first CSS framework for rapidly building custom designs without leaving your HTML.      |
 | **Framer Motion**| (Optional: Add if you include animations) A production-ready motion library for React.           |
-| **Vercel/Netlify**| Deployed for fast, global hosting and continuous integration.                                  |
+| **Vercel/vercel**| Deployed for fast, global hosting and continuous integration.                                  |
 
 ---
 

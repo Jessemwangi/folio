@@ -2,9 +2,18 @@ export interface IProject {
   id: number;
   name: string;
   description: string;
-  stack: string[]; // Essential for showing skills at a glance
+  stack: string[];
   image: string;
-  liveSiteUrl: string;
-  adminUrl?: string; 
-  sourceCodeUrl: string; // Recruiters LOVE seeing the source code
+  
+  // Main URLs
+  liveSiteUrl?: string;
+  adminUrl?: string;
+  learnerUrl?: string;
+  backendUrl?: string;
+  
+  // Source code can be either:
+  sourceCodeUrl?: string; // For single-repo projects
+  sourceCode?: {         // For multi-repo projects
+    [repoName: string]: string;
+  };
 }
