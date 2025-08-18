@@ -5,5 +5,6 @@ export interface IProject {
   stack: string[]; // Essential for showing skills at a glance
   image: string;
   liveSiteUrl: string;
+  adminUrl?: string; 
   sourceCodeUrl: string; // Recruiters LOVE seeing the source code
 }
