@@ -2,7 +2,6 @@ import React from "react";
 import { useTheme } from "../context/ThemeContextProvider";
 
 const ThemeButton: React.FC = () => {
-  // 2. Get the global state and toggle function from the context
   const { isDarkMode, toggleDarkMode } = useTheme();
 
   return (

@@ -2,7 +2,6 @@
 const Hero = () => {
   return (
     <section id="home" className="py-20 relative overflow-hidden">
-      {/* Background gradient for visual depth */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-50/50 to-purple-50/50 dark:from-blue-950/20 dark:to-purple-950/20 -z-10"></div>
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

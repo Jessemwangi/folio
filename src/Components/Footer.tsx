@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           © {currentYear} Jesse Mwangi. All Rights Reserved.
         </p>
 
-        {/* Social Media Links with Icons */}
+        {/* Social Media*/}
         <div className="flex items-center space-x-6">
           <a 
             href="https://github.com/Jessemwangi" 
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
             </svg>
           </a>
           <a 
-            href="https://www.linkedin.com/in/jesse-mwangi" // <-- Update with your LinkedIn profile URL
+            href="https://www.linkedin.com/in/jesse-mwangi"
             target="_blank" 
             rel="noopener noreferrer"
             aria-label="LinkedIn Profile"

@@ -10,11 +10,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }: ProjectCardProps) 
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-      {/* Laptop frame */}
       <div className="relative mx-auto w-full max-w-[90%] mt-8 bg-gray-900 rounded-t-lg p-2">
-        {/* Screen */}
         <div className="relative bg-white rounded-sm overflow-hidden h-40">
-          {/* Scrollable img */}
           <div className="overflow-y-scroll h-full">
             <img
               src={project.image}
@@ -23,14 +20,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }: ProjectCardProps) 
             />
           </div>
         </div>
-        {/* keyboard */}
         <div className="relative h-3 bg-gray-800 rounded-b-lg">
           <div className="absolute left-1/2 top-0 w-16 h-1 -translate-x-1/2 bg-gray-700 rounded-b"></div>
         </div>
       </div>
       <div className="p-6">
         <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
-        {/* Stack */}
+        {/* skills */}
         <div className="flex flex-wrap gap-2 mb-4">
           {project.stack.map((tech) => (
             <span
@@ -44,7 +40,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }: ProjectCardProps) 
         <p className="text-gray-700 dark:text-gray-300 mb-6">
           {project.description}
         </p>
-        {/* Call-to-action buttons */}
+       
         <div className="flex flex-wrap items-center gap-3">
           {/* Live Site */}
           {project.liveSiteUrl && project.liveSiteUrl !== "#" && (
@@ -78,7 +74,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }: ProjectCardProps) 
               Learner Portal
             </a>
           )}
-          {/* Source Code Links - now inline with other buttons */}
+          {/* Source Code */}
           {hasSourceCode && (
             Object.entries(project.sourceCode!).map(([repoName, repoUrl]) => (
               <a

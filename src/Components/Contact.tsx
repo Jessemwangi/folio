@@ -15,7 +15,7 @@ const Contact = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
         
-        {/* Left Column: Direct Contact Info */}
+        {/* Left >>  Contact Info */}
         <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
           <h3 className="text-2xl font-bold mb-6">Contact Directly</h3>
           <div className="space-y-6">
@@ -57,7 +57,7 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Right Column: Contact Form */}
+        {/* Right >> Form */}
         <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
           <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
           <form onSubmit={handleSubmit} className="space-y-6">
