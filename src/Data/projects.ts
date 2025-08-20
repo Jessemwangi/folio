@@ -66,14 +66,5 @@ export const projects: IProject[] = [
     image: "/assets/endpoints.jpg",
     liveSiteUrl: "#",
     sourceCodeUrl: `${gitUrl}/Bookmark`,
-  },
-  // {
-  //   id: 6,
-  //   name: "TasteIT - Recipe Sharing App",
-  //   description: "A full-stack React application allowing users to share, review, and rate recipes. Includes features for commenting and user-generated content.",
-  //   stack: ["React", "Node.js", "Firebase", "CSS-in-JS"],
-  //   image: "/assets/recipe.png",
-  //   liveSiteUrl: "https://recipe-bqpt.onrender.com/",
-  //   sourceCodeUrl: `${gitUrl}/tasteit`,
-  // },
+  }
 ];
